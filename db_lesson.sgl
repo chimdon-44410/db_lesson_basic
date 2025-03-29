@@ -135,7 +135,7 @@ SELECT * FROM people
  WHERE gender = 2 AND age BETWEEN 20 AND 29,
   OR gender = 1 AND  age BETWEEN 40 AND 49 ;
 
-(Q7.わからなくて、男女別々に名前一覧を出しました。)
+(Q7.一気に一覧にする方法がわからなくて、男女別々に名前一覧を出しました。)
   SELECT name FROM people
  WHERE gender = 2 AND age BETWEEN 20 AND 29;
 
