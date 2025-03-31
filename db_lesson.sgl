@@ -99,9 +99,10 @@ ORDER BY
 
   -- Q6 
   
-  →PEOPLEという名前のテーブルから(名前),(メールアドレス),(年齢),のカラムから
-  さらに(department_id)が1のデーブルを、
-  作成時間を昇順にして表示する。
+  →PEOPLEという名前のテーブルから
+  カラム名(department_id)の値が1である人の
+  カラム名(名前)(Eメールアドレス)(年齢)を
+  作成時間を昇順にしてレコードを表示する。
 
 
  -- Q7
@@ -131,6 +132,6 @@ INNER JOIN departments ON  departments.department_id = people.department_id ;
 
 -- Q11
 
-SELECT p.name, r.content IS NULL FROM people p LEFT OUTER JOIN reports r USING (person_id)
-WHERE r.content IS NULL= 1;
+SELECT p.name FROM people p LEFT OUTER JOIN reports r USING (person_id)
+WHERE r.content IS NULL;
 
