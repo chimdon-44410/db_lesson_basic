@@ -142,6 +142,11 @@ SELECT * FROM people
  SELECT name FROM people
  WHERE gender = 1 AND age BETWEEN 40 AND 49;
 
+ Q7(解決しました！)→SELECT name FROM people
+ WHERE gender = 2 AND age BETWEEN 20 AND 29
+ OR age BETWEEN 40 AND 49 AND gender = 1;
+
+
 SELECT * FROM people
 WHERE  department_id = 1
 ORDER BY age ASC;
